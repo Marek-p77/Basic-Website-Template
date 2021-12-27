@@ -1,0 +1,110 @@
+/* CSS Template Made by Marek_p :) */
+
+* {
+    margin: 0; /* Výchozí margin */
+    padding: 0; /* Výchozí padding */
+    font-family: Arial; /* Font stránky */
+    box-sizing: border-box; /* Velikost boxů */
+}
+
+body {
+    background-color: #cfcfcf;
+}
+
+/* ########## Nadpis ########## */
+.header {
+    background-color: #000; /* Barva pozadí nadpisu */
+    padding: 5px 0; /* Vnitřní mezera nahoře a dole */
+    text-align: center; /* Text uprostřed */
+    color: #fff; /* Barva textu */
+}
+
+/* ########## Menu ########## */
+
+.sidebar {
+    height: 100%; /* Výška Menu */
+    width: 200px; /* Šířka Menu */
+    position: fixed; /* Pozice */
+    top: 0; /* Žádní horní mezera */
+    left: 0; /* Zarovnáno vlevo */
+    background-color: #000; /* Barva pozadí menu */
+    padding-top: 60px; /* Vnitří horní mezera */
+}
+
+.sidebar a {
+    padding: 6px 8px 6px 16px; /* Vnitřní mezera */
+    text-decoration: none; /* Text bez podtržení */
+    font-size: 20px; /* Velikost textu */
+    color: #fff; /* Barva textu */
+    display: block; /* Anchor na blokový element */
+}
+
+.sidebar a i {
+    padding: 5px; /* Vnitřní mezera u ikony */
+    border-radius: 5px; /* Zaoblení rohů ikony */
+    background-color: rgb(48, 48, 48); /* Barva pozadí ikony */
+}
+
+/* ########## Obsah ########## */
+
+.main .content {
+    float: left; /* Zarovnání obsahu do leva */
+    padding: 20px; /* Vnitřní mezera od zbytku stránky */
+    height: 300px; /* Výška */
+}
+
+.main { margin-left: 200px; } /* Mezera vlevo kvůli levému menu */
+
+/* ########## Karty ######### */
+
+.row { display: inline-block; } /* Řádek jako řádek :D */
+
+.card {
+    max-width: 220px; /* Maximální šířka Karty */
+    min-width: 180px; /* Minimální šířka Karty */
+    padding: 10px; /* Vnitřní mezera */
+    margin: 10px 10px 0 0; /* Vnější mezera */
+    background-color: #dfdfdf; /* Barva pozadí Karty */
+    color: #000; /* Barva textu v Kartě */
+    box-shadow: 3px 3px 10px gray;
+    display: inline-block; /* Zobrazení do řádku */
+    border-radius: 5px; /* Zaoblení rohů Karty */
+}
+
+.card h3 { padding-bottom: 5px; } /* Mezera pod nadpisem Karty */
+
+/* ########## Patička ######### */
+
+.main .footer {
+    position: fixed; /* Pozice footeru */
+    left: 0; /* Nulová mezera vlevo */
+    bottom: 0; /* Nulová mezera dole */
+    width: 100%; /* Celá šířka footeru */
+    padding: 10px; /* Vnitřní mezera */
+    background-color: #000; /* Barva pozadí */
+    color: white; /* Barva textu ve footeru */
+    font-weight: bold; /* Tlustý text ve footeru */
+    text-align: center; /* Text uprostřed */
+}
+
+/* ########## Ostatní ######### */
+
+.bold { font-weight: bold; } /* Třídka pro tučný text */
+
+a { color: #000; } /* Černé anchory */
+
+/* ########## Responzibilita ######### */
+
+@media (max-width: 600px) {
+    .content {
+      width: 100%;
+      height: auto;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+/*                              The END                                   */
